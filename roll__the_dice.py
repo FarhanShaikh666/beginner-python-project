@@ -1,8 +1,5 @@
-
 def game():
     import random                                                            #10 Jan 2025
-
-
     while True:
         user = input("Roll the dice (y/n):- ")
         if user=="y":
@@ -15,8 +12,6 @@ def game():
         else:
             print("invalid choice")
             continue
-        
-
 game()
 
 

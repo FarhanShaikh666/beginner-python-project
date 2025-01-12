@@ -1,8 +1,8 @@
 import random 
 
-def print():
+def print_line():                                                    #10 Jan 2025
     print(f"your choice = {dic[user]}")
-    print(f"coumputer choice = {dic[ai]}")
+    print(f"coumputer choice = {dic[ai]}")                           #modified: 12 Jan 2025
 
 def determine_winner():
     if \
@@ -20,13 +20,13 @@ def determine_winner():
     else:
         print("Invalid choice!")
 
-try:                                                                        #10 Jan 2025
+try:                                                                        
     while True:
         dic = {"r":"rock", "p":"paper", "s":"scissor"}
         ai = random.choice(["r", "p", "s"])
         user = input("Rock, paper or scissor (r/p/s):- ")
 
-        print()
+        print_line()
 
         determine_winner()
         
